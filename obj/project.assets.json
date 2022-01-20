@@ -2195,11 +2195,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/karanvishwakarma/Desktop/sideproject/SideProject/ASPProject4.csproj",
+      "projectUniqueName": "/Users/karanvishwakarma/Desktop/webproj/FirmAssetProject/ASPProject4.csproj",
       "projectName": "ASPProject4",
-      "projectPath": "/Users/karanvishwakarma/Desktop/sideproject/SideProject/ASPProject4.csproj",
+      "projectPath": "/Users/karanvishwakarma/Desktop/webproj/FirmAssetProject/ASPProject4.csproj",
       "packagesPath": "/Users/karanvishwakarma/.nuget/packages/",
-      "outputPath": "/Users/karanvishwakarma/Desktop/sideproject/SideProject/obj/",
+      "outputPath": "/Users/karanvishwakarma/Desktop/webproj/FirmAssetProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/karanvishwakarma/.nuget/NuGet/NuGet.Config"
