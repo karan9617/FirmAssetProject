@@ -1,0 +1,48 @@
+﻿@using ASPProject4.Models
+@model IEnumerable<UserModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Firms and Assests Association</h1>
+</div>
+<!-- HTML Form for uploading the files -->
+@using (Html.BeginForm("Index",
+                    "Home",
+                    FormMethod.Post,
+                    new { @enctype = "multipart/form-data" }))
+{
+    <label class="form-label" for="file">Upload Firm File</label>
+    <input type="file" class="form-control" name="firmFile" id="firmFile" />
+
+    <br>
+    <label class="form-label" for="file">Upload Assest Class File</label>
+    <input type="file" class="form-control" name="assetFile" id="assetFile" />
+    <br>
+    <br>
+
+    <input type="submit" class="btn btn-primary" value="Upload Image" />
+
+    <br>
+    <br>
+}
+<!-- Condition for checking if the number of records returned from the HomeController is not zero-->
+@if (Model.Count() > 0)
+{
+    <table class="table caption-top table-bordered table-striped table-hover">
+    <!-- iterating through the result and printing the output-->
+        @foreach (UserModel user in Model)
+        {
+        <tr>
+            <td>@user.FirmName</td>
+            <!-- Getting the asset name of the parrticular company -->
+            @foreach (string assetName in @user.Companytable)
+            {
+                <td>@assetName</td>
+            }
+        </tr>
+        }
+    </table>
+}
